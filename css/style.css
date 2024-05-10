@@ -2,67 +2,228 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* shared styles */
-*{
+* {
     font-family: "Poppins", sans-serif;
 }
-:root{
+
+:root {
     --text-grey: #3A3A3A;
+    --primary-color: #E02C6D;
 }
 
-.text-grey-16{
+.text-grey-16 {
     color: var(--text-grey);
     font-weight: 600;
     font-size: 1rem;
 }
-.text-24{
+
+.text-24 {
     font-weight: 700;
     font-size: 1.5rem;
 }
 
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 41px;
+    padding: 10px 24px;
+
+}
+
 /* header styles */
-header{
+header {
     padding: 40px 80px;
 }
 
 /* nav styles */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-title{
+
+.nav-title, .collection-title {
     color: var(--text-grey);
-    
+
 }
-nav > ul{
+
+nav>ul {
     display: flex;
     justify-content: space-between;
 }
-nav li{
+
+nav li {
     list-style: none;
     margin-right: 35px;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
 }
 
+.header-title {
+    font-weight: 700;
+    font-size: 3.25rem;
+    color: var(--text-grey);
+    margin-bottom: 16px;
+}
+
+.header-desc {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    width: 70%;
+}
+
+.header-container {
+    display: flex;
+    padding: 80px 0px;
+    justify-content: space-between;
+    gap: 120px;
+
+}
+
+.header-img-container {
+    background-image: url('../images/Circle\ design.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+/* .header-img-container > img {
+    width: 100%;
+} */
+
+/* logos-container styles */
+.logos-container {
+    margin: 0px 120px;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-width: 3px 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(192, 204, 218, 0.1), rgba(192, 204, 218, 0.6), rgba(192, 204, 218, 0.1)) 1;
+}
+/* popular collection styles */
+.collection{
+    padding: 100px 180px;
+}
+.collection-title{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+.card{
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+
+}
+.card-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #18191F;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+.card-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+.card-desc{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #787885;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.collection-see{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    float: right;
+}
 
 /* for mobile  */
 
 @media screen and (max-width: 576px) {
-    header, nav > ul{
+
+    header,
+    nav>ul {
         padding: 20px 10px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    
-    nav li{
+
+    nav li {
         margin-right: 15px;
     }
-    
-    
-    
-}
 
+    .header-container {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .header-content {
+        text-align: center;
+    }
+
+    .header-img-container>img {
+        width: 100%;
+    }
+
+    .header-container {
+        padding: 0px;
+    }
+
+    .header-desc {
+        width: 100%;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+
+    .header-title {
+        font-size: 1.75rem;
+    }
+    .logos-container{
+        margin: 0px;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+    .collection-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    
+    }
+    .collection{
+        padding: 0px;
+        margin: 0px 10px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
