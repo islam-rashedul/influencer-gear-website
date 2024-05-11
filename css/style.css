@@ -4,6 +4,8 @@
 /* shared styles */
 * {
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -43,7 +45,8 @@ nav {
     align-items: center;
 }
 
-.nav-title, .collection-title {
+.nav-title,
+.collection-title {
     color: var(--text-grey);
 
 }
@@ -105,51 +108,59 @@ nav li a {
     border-style: solid;
     border-image: linear-gradient(to right, rgba(192, 204, 218, 0.1), rgba(192, 204, 218, 0.6), rgba(192, 204, 218, 0.1)) 1;
 }
+
 /* popular collection styles */
-.collection{
+.collection {
     padding: 100px 180px;
 }
-.collection-title{
+
+.collection-title {
     font-size: 1.75rem;
     font-weight: 600;
     text-align: center;
 
 }
-.collection-container{
+
+.collection-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 
 }
-.card{
+
+.card {
     color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
 
 }
-.card-title{
+
+.card-title {
     font-size: 1.75rem;
     font-weight: 500;
     color: #18191F;
     margin-top: 10px;
     margin-bottom: 6px;
 }
-.card-price{
+
+.card-price {
     font-size: 1.5rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
     margin-top: 0px;
     margin-bottom: 6px;
 }
-.card-desc{
+
+.card-desc {
     font-size: 0.875rem;
     font-weight: 700;
     color: #787885;
     margin-top: 0px;
     margin-bottom: 15px;
 }
-.collection-see{
+
+.collection-see {
     font-size: 1rem;
     font-weight: 700;
     color: var(--primary-color);
@@ -157,49 +168,56 @@ nav li a {
     margin-bottom: 0px;
     border: none;
     background-color: transparent;
-    position: relative;
-    float: right;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
 }
 
-.feature{
-    padding: 100px 165px;
+.feature {
+    padding: 30px 165px;
     display: flex;
     gap: 80px;
     align-items: center;
 }
-.feature-title{
+
+.feature-title {
     color: #0A0826;
     font-size: 2.4rem;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 16px;
 }
-.feature-desc{
+
+.feature-desc {
     color: #6A6A6A;
     font-size: 1rem;
     font-weight: 600;
     margin-top: 0px;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
 }
-.join-btn{
+
+.join-btn {
     border-radius: 0;
 }
-footer{
+
+footer {
     background-color: #0A0826;
     padding: 50px 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.footer-title{
+
+.footer-title {
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 2px;
 }
-.footer-desc{
-    
+
+.footer-desc {
+
     color: #D9DBE1;
     font-size: 0.8rem;
     font-weight: 600;
@@ -224,7 +242,7 @@ footer{
         margin-right: 15px;
     }
 
-    .header-container{
+    .header-container {
         flex-direction: column-reverse;
         gap: 15px;
     }
@@ -250,52 +268,62 @@ footer{
     .header-title {
         font-size: 1.75rem;
     }
-    .logos-container{
+
+    .logos-container {
         margin: 0px;
         flex-wrap: wrap;
         gap: 20px;
         padding: 20px;
     }
-    .collection-container{
+
+    .collection-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
-    
+
     }
-    .collection{
+
+    .collection {
         padding: 0px;
         margin: 0px 10px;
     }
-    .card{
+
+    .card {
         display: flex;
         flex-direction: column;
     }
-    .feature{
+
+    .feature {
         flex-direction: column-reverse;
-        padding: 100px 0px;
+        padding: 30px 15px;
         margin: 0;
         justify-content: center;
         align-items: center;
     }
-    .feature img{
+
+    .feature img {
         width: 100%;
     }
-    .feature-text{
+
+    .feature-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
         padding: 0;
     }
-    .feature-title, .feature-desc{
+
+    .feature-title,
+    .feature-desc {
         text-align: center;
     }
-    footer{
-        
+
+    footer {
+
         padding: 50px 60px;
-        
-        
-        
+
+
+
     }
 
 }
